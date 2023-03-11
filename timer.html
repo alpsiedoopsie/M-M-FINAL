@@ -1,0 +1,262 @@
+<!DOCTYPE HTML>
+<html>
+<head><title>Hack-It-Down</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+    body {
+        margin:0;
+    padding:0;
+    font-family: sans-serif;
+    background: linear-gradient(#141e30, #243b55);
+    width: 100%;
+    height: auto;
+    background-size: auto 800px;
+    height: auto ;
+    background-position: center top;
+    
+  }
+topnav {
+    background-color: #333;
+    overflow: hidden;
+}
+
+/* Style the links inside the navigation bar */
+
+
+  .topnav a {
+    position: relative;
+    display: inline-block;
+    padding: 10px 20px;
+    color: #03e9f4;
+    font-size: 16px;
+    text-decoration: none;
+    text-transform: uppercase;
+    overflow: hidden;
+    transition: .5s;
+    margin: 40px;
+    letter-spacing: 4px
+  }
+  
+  .topnav a:hover {
+    background: #03e9f4;
+    color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 5px #03e9f4,
+                0 0 25px #03e9f4,
+                0 0 50px #03e9f4,
+                0 0 100px #03e9f4;
+  }
+  
+  .topnav a span {
+    position: absolute;
+    display: block;
+  }
+  
+  .topnav a span:nth-child(1) {
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(90deg, transparent, #03e9f4);
+    animation: btn-anim1 1s linear infinite;
+  }
+  
+  @keyframes btn-anim1 {
+    0% {
+      left: -100%;
+    }
+    50%,100% {
+      left: 100%;
+    }
+  }
+  
+  .topnav a span:nth-child(2) {
+    top: -100%;
+    right: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(180deg, transparent, #03e9f4);
+    animation: btn-anim2 1s linear infinite;
+    animation-delay: .25s
+  }
+  
+  @keyframes btn-anim2 {
+    0% {
+      top: -100%;
+    }
+    50%,100% {
+      top: 100%;
+    }
+  }
+  
+  .topnav a span:nth-child(3) {
+    bottom: 0;
+    right: -100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(270deg, transparent, #03e9f4);
+    animation: btn-anim3 1s linear infinite;
+    animation-delay: .5s
+  }
+  
+  @keyframes btn-anim3 {
+    0% {
+      right: -100%;
+    }
+    50%,100% {
+      right: 100%;
+    }
+  }
+  
+  .topnav a span:nth-child(4) {
+    bottom: -100%;
+    left: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(360deg, transparent, #03e9f4);
+    animation: btn-anim4 1s linear infinite;
+    animation-delay: .75s
+  }
+  
+  @keyframes btn-anim4 {
+    0% {
+      bottom: -100%;
+    }
+    50%,100% {
+      bottom: 100%;
+    }
+  }
+  
+/* Add a color to the active/current link */
+.topnav a.active {
+  background-color: #03e9f4;
+  color: black;
+}
+
+/* Right-aligned section inside the top navigation */
+.topnav-right {
+  float: right;
+}
+
+h1 {
+    margin: 0 auto; 
+    font-size: 3em;   
+    text-align: center;
+    color:#ffffff;
+    font-family: 'Raleway', sans-serif;
+    font-weight: bold;
+    letter-spacing: 1.5px;
+}
+h2 
+{
+    margin: 0 auto; 
+    font-size: 2em;
+ 
+    text-align: center;
+    color: #ffffff;
+    font-family: 'Raleway', sans-serif;
+    font-weight: bold;
+    letter-spacing: 1.5px;
+}
+p
+   {
+        margin: 0 auto; 
+        font-size: 100px;
+        text-align: center;
+        color: #ffffff;
+        font-family: 'Raleway', sans-serif;
+        letter-spacing: 1.5px;
+    }
+h3{
+        margin: 0 auto; 
+        font-size: 30px;
+        text-align: center;
+        color: #ffffff;
+        font-family: 'Raleway', sans-serif;
+        letter-spacing: 1.5px;
+    }
+
+    
+</style>
+</head>
+<body>
+<div class="topnav">
+  <a class="active" href="timer.html">HOME</a>
+  <a href="Faq.html">FAQ</a>
+  <a href="sponsors.html">SPONSORS</a>
+ <a href="AboutUs.html">ABOUT US</a>
+
+  <div class="topnav-right">
+        <a href="register.html">
+<span></span>
+<span></span>
+<span></span>
+<span></span>
+REGISTER!!</a>
+  </div>
+
+<br>
+<br>
+<Br>
+
+<h1>
+    HACK-IT-DOWN
+</h1>
+<br><br>
+<H2>
+    STARTS IN
+</H2>
+<p id="demo"></p>
+<h3>
+    Sign up for our next hackathon, and compete against the best developers in the industry. Get tips, collaborate and learn from experts in the field of development.
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+</h3>
+
+<script>
+// Set the date we're counting down to
+var countDownDate = new Date("Mar 11, 2023 15:00:00").getTime();
+
+// Update the count down every 1 second
+var x = setInterval(function() {
+
+  // Get today's date and time
+  var now = new Date().getTime();
+    
+  // Find the distance between now and the count down date
+  var distance = countDownDate - now;
+    
+  // Time calculations for days, hours, minutes and seconds
+  var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+  var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+    
+  // Output the result in an element with id="demo"
+  document.getElementById("demo").innerHTML = days + "d " + hours + "h "
+  + minutes + "m " + seconds + "s ";
+    
+  // If the count down is over, write some text 
+  if (distance < 0) {
+    clearInterval(x);
+    document.getElementById("demo").innerHTML = "EXPIRED";
+  }
+}, 1000);
+</script>
+
+</body>
+</html>
